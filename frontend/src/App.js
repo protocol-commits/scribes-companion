@@ -19,8 +19,8 @@ function App() {
     setContextText('Generating context with AI...');
 
     try {
-      const scriptureUrl = `http://localhost:3000/api/scripture?q=${passageQuery}`;
-      const contextUrl = `http://localhost:3000/api/context?q=${passageQuery}`;
+     const scriptureUrl = `https://scribes-companion-backend.onrender.com/api/scripture?q=${passageQuery}`;
+const contextUrl = `https://scribes-companion-backend.onrender.com/api/context?q=${passageQuery}`;
 
       const [scriptureResponse, contextResponse] = await Promise.all([
         fetch(scriptureUrl),
